@@ -1,0 +1,151 @@
+local Args = {
+    [1] = "validate",
+    [2] = {
+        ["Q18"] = {
+            ["Answer"] = {
+                [1] = 2,
+                [2] = "I would tell them to join the group and go to the Quiz Center on the group\226\128\153s page."
+            },
+            ["Answers"] = {
+                [1] = "I would tell them that they are too stupid to become one.",
+                [2] = "I would tell them to join the group and go to the Quiz Center on the group\226\128\153s page.",
+                [3] = "I would tell them to order or leave the line.",
+                [4] = "I would tell them to stop trolling."
+            },
+            ["Question"] = "If a customer is wondering how to become a Trainee, how do you respond?"
+        },
+        ["Q27"] = {
+            ["Answer"] = {
+                [1] = 4,
+                [2] = "I would simply let the person order from me without making a big deal out of it."
+            },
+            ["Answers"] = {
+                [1] = "I would contact an admin to get rid of them.",
+                [2] = "I would refuse to let them order from me just because I do not like them.",
+                [3] = "I would be rude to the person since I do not like them.",
+                [4] = "I would simply let the person order from me without making a big deal out of it."
+            },
+            ["Question"] = "If someone you do not like tried to order from you, what would you do?"
+        },
+        ["Q13"] = {
+            ["Answer"] = {
+                [1] = 4,
+                [2] = "I would treat them with respect and kindness at all times."
+            },
+            ["Answers"] = {
+                [1] = "I would act like they didn't exist.",
+                [2] = "I would make fun of them when admins are not looking.",
+                [3] = "I would be rude to demotivate them.",
+                [4] = "I would treat them with respect and kindness at all times."
+            },
+            ["Question"] = "If you pass this quiz, how would you treat your fellow workers?"
+        },
+        ["Q4"] = {
+            ["Answer"] = {
+                [1] = 1,
+                [2] = "It is primarily a caf\195\169."
+            },
+            ["Answers"] = {
+                [1] = "It is primarily a caf\195\169.",
+                [2] = "It is mainly a clothing group.",
+                [3] = "It is the worst group.",
+                [4] = "Frapp\195\169 is a place where people do parkour."
+            },
+            ["Question"] = "What is Frapp\195\169?"
+        },
+        ["Q46"] = {
+            ["Answer"] = {
+                [1] = 2,
+                [2] = "Treat them as I would any other customer."
+            },
+            ["Answers"] = {
+                [1] = "Troll them.",
+                [2] = "Treat them as I would any other customer.",
+                [3] = "Give them better service than everyone else that would come to my register.",
+                [4] = "Tell them to go to a Head Barista."
+            },
+            ["Question"] = "If someone famous comes to your register, what would you do?"
+        },
+        ["SQ8"] = {
+            ["Answer"] = {
+                [1] = 4,
+                [2] = "Can you help me find the muffins?"
+            },
+            ["Answers"] = {
+                [1] = "Muffins can you find help me?",
+                [2] = "Help me you can finding muffins.",
+                [3] = "You can helping me the finding muffins.",
+                [4] = "Can you help me find the muffins?"
+            },
+            ["Required"] = true,
+            ["Question"] = "Which of these sentences make sense?"
+        },
+        ["Q7"] = {
+            ["Answer"] = {
+                [1] = 1,
+                [2] = "I would try my best to help the worker."
+            },
+            ["Answers"] = {
+                [1] = "I would try my best to help the worker.",
+                [2] = "I would make fun of them.",
+                [3] = "I would ignore them.",
+                [4] = "I would try to get the person demoted for not doing their job."
+            },
+            ["Question"] = "If you saw a worker that was confused about something, what would you do?"
+        },
+        ["Q32"] = {
+            ["Answer"] = {
+                [1] = 1,
+                [2] = "Kindness and swiftness are good traits to have as a worker."
+            },
+            ["Answers"] = {
+                [1] = "Kindness and swiftness are good traits to have as a worker.",
+                [2] = "Workers should always be condescending and rude.",
+                [3] = "They should be robotic and unmotivated.",
+                [4] = "They should always focus on getting promotions."
+            },
+            ["Question"] = "What are good characteristics to have as a worker?"
+        },
+        ["R1"] = {
+            ["Answer"] = {
+                [1] = 1,
+                [2] = "Yes, I agree."
+            },
+            ["Answers"] = {
+                [1] = "Yes, I agree.",
+                [2] = "No, I disagree."
+            },
+            ["Required"] = true,
+            ["Question"] = "Do you agree that, if you pass this application, you will follow our rules at all of our games? The rules are located in the group handbook in our group\226\128\153s description."
+        },
+        ["Q30"] = {
+            ["Answer"] = {
+                [1] = 4,
+                [2] = "I would tell an admin."
+            },
+            ["Answers"] = {
+                [1] = "I would ignore the customer until they ordered properly.",
+                [2] = "I would ask them what time so that I can join the raid later.",
+                [3] = "I would do nothing since the person did not actually do anything.",
+                [4] = "I would tell an admin."
+            },
+            ["Question"] = "If someone said that they would raid the game later, how would you react?"
+        },
+        ["SQ2"] = {
+            ["Answer"] = {
+                [1] = 3,
+                [2] = "I want to go to Frappe and order a drink."
+            },
+            ["Answers"] = {
+                [1] = "I walk Frappe while jump food upstairs.",
+                [2] = "Cakepop I jump down to front.",
+                [3] = "I want to go to Frappe and order a drink.",
+                [4] = "Muffin down barista jump from."
+            },
+            ["Required"] = true,
+            ["Question"] = "Which of these sentences make sense?"
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(unpack(Args))
